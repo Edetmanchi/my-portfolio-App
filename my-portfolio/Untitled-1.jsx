@@ -1,8 +1,9 @@
 import * as React from "react";
+import Swal from 'sweetalert2'
 import myResume from '../src/img/resume.pdf';
 import inno from '../src/img/innoconnect.png'
-import ebudget from '../src/img/ebudget.jpg'
-import checkin from '../src/img/checkin.jpg'
+import ebudget from '../src/img/ebudget.png'
+import checkin from '../src/img/checkin.png'
 import hotel from '../src/img/hotel.jpg'
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -17,6 +18,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+
 
 
 
@@ -25,6 +28,23 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function MyComponent(props) {
   const myImage = "https://cdn.hashnode.com/res/hashnode/image/upload/v1704302659496/676ebe7f-81de-43fa-ac8b-4dee416fe7b1.png?auto=compress,format&format=webp"   
+
+
+  const handleSubmit = (e) => {
+    // e.preventDefault();
+    // const formData = new FormData(e.target);
+    // const messageBody = encodeURIComponent(formData.get('message'));
+    // const mailtoLink = `edeteffiong321@gmail.com.com?subject=Contact%20Form&body=${messageBody}`;
+
+    // window.location.href = mailtoLink;
+      Swal.fire({
+        icon: 'success',
+        title: 'Thanks for reaching out`',
+        text: 'Edet will respond within a day!',
+      });
+    
+  };
+
   return (
     <div className="items-start bg-white flex flex-col pt-6">
       {/* navbar */}
@@ -123,13 +143,18 @@ export default function MyComponent(props) {
                 </a>
               </div>
               <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
-                <a href="https://github.com/Edetmanchi">
+                <a href="https://twitter.com/edetmanchi">
                   <FaXTwitter className="text-4xl"/>
                 </a>
               </div>
               <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
                 <a href="https://www.instagram.com/edet_manchi/">
                  <FaInstagramSquare className="text-4xl"/>
+                </a>
+              </div>
+              <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
+                <a href="https://wa.link/bnktx6">
+                 <IoLogoWhatsapp className="text-4xl"/>
                 </a>
               </div>
             </div>
@@ -435,25 +460,21 @@ export default function MyComponent(props) {
                   </button>
                 </div>
               </div>
-              <div className="flex flex-col items-stretch w-[47%] ml-5 max-md:w-full max-md:ml-0">
-                  <div className="flex flex-col items-stretch w-[48%] h-{80%} max-md:w-full max-md:ml-0">
-                    <img 
-                    className=" rounded-xl w-full h-full"
-                    src={ebudget} alt=''
-                    />         
-                  </div>
+              <div className="flex flex-col items-stretch w-[48%] h-{80%} max-md:w-full max-md:ml-0">
+                <img 
+                  className=" rounded-xl w-{64%} h-full"
+                  src={ebudget} alt=''
+                />         
               </div>
             </div>
           </div>
           <div className="mt-5 py-12 max-md:max-w-full">
             <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-              <div className="flex flex-col items-stretch w-[48%] max-md:w-full max-md:ml-0">
-                <div className="flex flex-col items-stretch w-[48%] h-{80%} max-md:w-full max-md:ml-0">
-                  <img 
-                    className=" rounded-xl"
-                    src={checkin} alt=''
-                  />         
-                </div>
+              <div className="flex flex-col items-stretch w-[48%] h-{80%} max-md:w-full max-md:ml-0">
+                <img 
+                  className=" rounded-xl"
+                  src={checkin} alt=''
+                />         
               </div>
               <div className="flex flex-col items-stretch w-[52%] ml-5 max-md:w-full max-md:ml-0">
                 <div className="items-start self-stretch flex flex-col my-auto max-md:max-w-full max-md:mt-10">
@@ -520,6 +541,7 @@ export default function MyComponent(props) {
           </div>
         </div>
       </div>
+      {/* testimonial page */}
       <div id="testimonial" className="items-stretch bg-white self-stretch flex w-full flex-col justify-center px-16 py-12 max-md:max-w-full max-md:px-5">
         <div className="justify-center items-stretch flex flex-col mx-5 my-2.5 px-8 max-md:max-w-full max-md:mr-2.5 max-md:px-5">
           <div className="justify-center items-center flex flex-col px-16 py-5 max-md:max-w-full max-md:px-5">
@@ -625,97 +647,106 @@ export default function MyComponent(props) {
           </div>
         </div>
       </div>
+      {/* contact page */}
       <div id="contact" className="items-stretch bg-white self-stretch flex w-full flex-col justify-center px-16 py-12 max-md:max-w-full max-md:px-5">
         <div className="justify-between mx-5 my-2.5 px-8 py-5 max-md:max-w-full max-md:mr-2.5 max-md:px-5">
-          <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+          <div className="gap-5 flex max-md:flex-col items-center justify-center max-md:items-stretch max-md:gap-0">
             <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
-              <div className="items-stretch self-stretch flex grow flex-col max-md:max-w-full max-md:mt-5">
-                <div className="text-zinc-500 text-base leading-5 tracking-tight items-stretch rounded border-[color:var(--Primary-Black,#000)] justify-center px-6 py-5 border-[1.4px] border-solid max-md:max-w-full max-md:px-5">
-                  Your name
-                </div>
-                <div className="text-zinc-500 text-base leading-5 tracking-tight items-stretch rounded border-[color:var(--Primary-Black,#000)] justify-center mt-5 px-6 py-5 border-[1.4px] border-solid max-md:max-w-full max-md:px-5">
-                  Email
-                </div>
-                <div className="text-zinc-500 text-base leading-5 tracking-tight items-stretch rounded border-[color:var(--Primary-Black,#000)] justify-center mt-5 px-6 py-5 border-[1.4px] border-solid max-md:max-w-full max-md:px-5">
-                  Your website (If exists)
-                </div>
-                <div className="text-zinc-500 text-base leading-5 tracking-tight items-stretch rounded border-[color:var(--Primary-Black,#000)] justify-center mt-5 px-6 py-4 border-[1.4px] border-solid max-md:max-w-full max-md:px-5">
-                  How can I help?*
-                </div>
+                <form onSubmit={handleSubmit}>
+              <div className="items-stretch flex mx-10 gap-7 flex-col max-md:max-w-full max-md:mt-5">
+                  <div className=" rounded border-black justify-center border-[1.4px]">
+                    <input
+                      className="appearance-none w-full h-full py-5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline-blue"
+                      id="name"
+                      name="name"
+                      type="text"
+                      placeholder="Your Name"
+                    />
+                  </div>
+    
+                  <div className="rounded border-black justify-center border-[1.4px]">
+                    <input
+                      className="appearance-none w-full h-full py-5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline-blue"
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div className="rounded border-black justify-center border-[1.4px]">
+                    <textarea
+                      className="appearance-none rounded w-full h-full py-5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline-blue"
+                      id="message"
+                      rows="4"
+                      placeholder="Your Message"
+                    />
+                  </div>
                 <div className="items-stretch flex justify-between gap-5 mt-5 pr-20 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
-                  <div className="text-white text-xl font-semibold leading-6 tracking-wide whitespace-nowrap justify-center items-stretch rounded bg-black grow px-5 py-4">
-                    Get In Touch
+                  <button
+                      className="bg-black hover:bg-white hover:border-gray-800 hover:border hover:text-black text-white font-bold py-2 px-12 rounded focus:outline-none focus:shadow-outline-blue"
+                      type="submit"
+                      onClick={handleSubmit}
+                    >
+                      Submit
+                  </button>                
+                  <div className="items-stretch flex justify-between gap-10">
+                    <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black hover:text-white hover:bg-black">
+                      <a href="https://github.com/Edetmanchi">
+                        <FaGithub className="text-4xl"/>
+                      </a>
+                    </div>
+                    <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
+                    <a href="https://www.linkedin.com/in/edet-effiong/">
+                      <FaLinkedin className="text-4xl"/>
+                      </a>
+                    </div>
+                    <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
+                      <a href="https://twitter.com/edetmanchi">
+                        <FaXTwitter className="text-4xl"/>
+                      </a>
+                    </div>
+                    <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
+                      <a href="https://www.instagram.com/edet_manchi/">
+                      <FaInstagramSquare className="text-4xl"/>
+                      </a>
+                    </div>
+                    <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
+                      <a href="https://wa.link/bnktx6">
+                      <IoLogoWhatsapp className="text-4xl"/>
+                      </a>
+                    </div>
                   </div>
-                  <div className="justify-center items-center rounded bg-black flex aspect-square flex-col w-14 h-14 px-5">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/271db03cebe29178ef03b80bf06b7ffeede4dfdfa22cefc2efa53bfc3614e3fa?apiKey=6b10e59427914ab996bb6d24a4478661&"
-                      className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
-                      alt=""
-                    />
-                  </div>
-                  <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] flex aspect-square flex-col w-14 h-14 px-5 border-2 border-solid">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/79b5ec9aa45b3144a55830fde4021401799429d7dfb2a59d256c022cb1d1f80a?apiKey=6b10e59427914ab996bb6d24a4478661&"
-                      className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
-                      alt=""
-                    />
-                  </div>
-                  <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] flex aspect-square flex-col w-14 h-14 px-5 border-2 border-solid">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/ae18bc3c634cf3e691965d66ae63f4481345209bb5979e8c17197d2097807adf?apiKey=6b10e59427914ab996bb6d24a4478661&"
-                      className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
-                      alt=""
-                    />
                   
-                  </div>
-                  <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] flex aspect-square flex-col w-14 h-14 px-5 border-2 border-solid">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd375fe72dbd81a73c698fc7aa2aa28c3b59ed47cf6e40e0944795c5f57db3ac?apiKey=6b10e59427914ab996bb6d24a4478661&"
-                      className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
-                      alt=""
-                    />
-                  </div>
                 </div>
               </div>
+                  </form>
             </div>
-            <div className="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
+            <div className="flex flex-col items-start w-6/12 ml-5 max-md:w-full max-md:ml-0">
               <div className="justify-center items-stretch self-stretch flex grow flex-col py-12 max-md:max-w-full max-md:mt-5">
-                <div className="items-stretch flex gap-4 mt-4 pr-20 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
-                  <div className="text-black text-5xl font-extrabold leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
-                    Let’s
+                <div className="items-stretch flex-col gap-5 pr-20 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
+                  <div className="text-black text-5xl font-extrabold leading-[56.16px] tracking-tighter whitespace-nowrap max-md:text-4xl">
+                    Connect with Me
                   </div>
-                  <div className="text-5xl font-extrabold leading-[56.16px] tracking-tighter max-md:text-4xl">
-                    talk
+                 
+                  <div className="text-zinc-900 text-base leading-6 tracking-wide mt-5 max-md:max-w-full">
+                    I seek to push the limits of creativity to create
+                    high-engaging, user-friendly, and memorable interactive
+                    experiences.
                   </div>
-                  <div className="text-black text-5xl font-extrabold leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
-                    for
+                  <div className="text-black text-3xl font-semibold leading-8 tracking-tight mt-10 max-md:max-w-full">
+                    edeteffiong321@gmail.com
                   </div>
-                </div>
-                <div className="text-black text-5xl font-extrabold leading-[56.16px] tracking-tighter mt-3 max-md:max-w-full max-md:text-4xl">
-                  Something special
-                </div>
-                <div className="text-zinc-500 text-base leading-6 tracking-wide mt-5 max-md:max-w-full">
-                  I seek to push the limits of creativity to create
-                  high-engaging, user-friendly, and memorable interactive
-                  experiences.
-                </div>
-                <div className="text-black text-3xl font-semibold leading-8 tracking-tight mt-10 max-md:max-w-full">
-                  Youremail@gmail.com
-                </div>
-                <div className="text-black text-3xl font-semibold leading-8 tracking-tight my-4 max-md:max-w-full">
-                  1234567890
-                </div>
+                  <div className="text-black text-3xl font-semibold leading-8 tracking-tight my-4 max-md:max-w-full">
+                    +234 8071284705
+                  </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="items-stretch bg-black self-stretch flex w-full flex-col justify-center px-16 py-6 max-md:max-w-full max-md:px-5">
-        <div className="justify-between items-center flex gap-5 mx-5 px-8 max-md:max-w-full max-md:flex-wrap max-md:mr-2.5 max-md:px-5">
+      {/* footer */}
+      <div className="items-stretch bg-black self-stretch flex  flex-col justify-center px-16 py-6 max-md:max-w-full max-md:px-5">
+        <div className="justify-between items-center flex gap-5  px-8 max-md:max-w-full max-md:flex-wrap max-md:mr-2.5 max-md:px-5">
           <div className="items-stretch flex gap-3 my-auto">
             <img
               loading="lazy"
@@ -727,20 +758,26 @@ export default function MyComponent(props) {
               Personal
             </div>
           </div>
+          <a href={myResume} download="your_resume.pdf">
+            <div 
+              className="text-black bg-white text-xl py-4 px-7 rounded-xl hover:bg-grey-800 font-bold leading-6 tracking-wide whitespace-nowrap">
+              Download Resume
+            </div>
+          </a>
           <div className="items-stretch self-stretch flex flex-col">
             <div className="text-white text-right text-base font-semibold leading-5 tracking-tight whitespace-nowrap">
               @ 2024
             </div>
             <div className="text-white text-right text-base font-semibold leading-5 tracking-tight whitespace-nowrap mt-3 self-end">
-              Made with love my Edet Effiong
+              Made with love by Edet Effiong
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
   );
 }
-
 
 
 

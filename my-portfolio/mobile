@@ -1,0 +1,585 @@
+import * as React from "react";
+
+export default function MyComponent(props) {
+  return (
+    <div className="items-start bg-white flex max-w-[480px] w-full flex-col mx-auto pt-4">
+      <div className="justify-between items-stretch self-center flex w-full max-w-[343px] gap-5">
+        <div className="items-stretch flex justify-between gap-3 px-5">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f466301822a0123570d734f3426582db3ce0c4a1b0ec60a9a706683165bdfdcc?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
+            alt=""
+          />
+
+          <div className="text-black text-xl font-bold leading-6 tracking-tight capitalize self-center my-auto">
+            Personal
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/03e5e558bdd944c2a1e2bf9b27622382a21e316b61cdb1daef529f80fd50d763?apiKey=6b10e59427914ab996bb6d24a4478661&"
+          className="aspect-square object-contain object-center w-9 fill-white overflow-hidden self-center shrink-0 max-w-full my-auto"
+          alt=""
+        />
+      </div>
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9e9182d8bef5d6d98d0aa774db4b43f97cc3095fa4356f20a41e461f0d9cd886?apiKey=6b10e59427914ab996bb6d24a4478661&"
+        className="aspect-[1.03] object-contain 
+        object-center w-full justify-end items-center overflow-hidden self-center max-w-[343px] mt-14"
+        alt=""
+      />
+      <div className="items-stretch self-center flex w-[343px] max-w-full gap-4 mt-12 pr-8">
+        <div className="text-black text-3xl leading-8 tracking-tight grow whitespace-nowrap">
+          Hello I’am
+        </div>
+        <div className="text-black text-3xl font-extrabold leading-8 tracking-tight grow whitespace-nowrap">
+          Evren Shah.
+        </div>
+      </div>
+      <div className="items-stretch self-center flex w-[343px] max-w-full gap-4 mt-3 pr-12">
+        <div className="text-black text-3xl font-extrabold leading-8 tracking-tight grow whitespace-nowrap">
+          Frontend
+        </div>
+        <div className="text-3xl font-extrabold leading-8 tracking-tight grow whitespace-nowrap">
+          Developer
+        </div>
+      </div>
+      <div className="items-stretch self-center flex w-full max-w-[343px] gap-4 mt-3 px-5">
+        <div className="text-black text-3xl leading-8 tracking-tight">
+          Based In
+        </div>
+        <div className="text-black text-3xl font-extrabold leading-8 tracking-tight">
+          India.
+        </div>
+      </div>
+      <div className="self-center text-zinc-500 text-base leading-6 tracking-wide w-[343px] mt-8">
+        I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's standard dummy
+        text ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to specimen book.
+      </div>
+      <div className="items-stretch self-center flex w-[343px] max-w-full justify-between gap-5 mt-8 pr-20 py-1">
+        <div className="justify-center items-center rounded bg-black flex aspect-square flex-col h-12 flex-1 px-3.5">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/eaa656301d02ddafe8c360ec18252f720e8d95135c90f963cf3a9679a1fd952f?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
+            alt=""
+          />
+          
+        </div>
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] flex aspect-square flex-col h-12 flex-1 px-3.5 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/79b5ec9aa45b3144a55830fde4021401799429d7dfb2a59d256c022cb1d1f80a?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
+            alt=""
+          />
+        </div>
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] flex aspect-square flex-col h-12 flex-1 px-3.5 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/50ff101c023700baf517a7ff24f3a2003a892d9e6896db93ab10aeada4634ee9?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
+            alt=""
+          />
+
+        </div>
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] flex aspect-square flex-col h-12 flex-1 px-3.5 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a739775e5241009c23bc186390010659461f9e274a30592fff45523945b00ab0?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
+            alt=""
+          />
+
+        </div>
+      </div>
+      <div className="justify-center items-center self-center flex w-full max-w-[343px] flex-col mt-20 px-16 py-5">
+        <div className="flex items-stretch gap-4">
+          <div className="text-black text-3xl leading-8 tracking-tight">My</div>
+          <div className="text-black text-3xl font-extrabold leading-8 tracking-tight">
+            Skills
+          </div>
+        </div>
+      </div>
+      <div className="justify-center items-stretch self-center flex w-full max-w-[343px] gap-5 mt-5">
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] bg-white flex flex-col h-[161px] flex-1 px-6 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c089225c3c7c97b7e2e6094c5012cce9864c5bed10b836262c8203a5927b2bb?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-14 overflow-hidden max-w-full"
+            alt=""
+          />
+
+
+
+          <div className="self-stretch text-black text-center text-xl font-bold leading-6 tracking-tight capitalize whitespace-nowrap mt-8">
+            javascript
+          </div>
+        </div>
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] bg-white flex flex-col h-[161px] flex-1 px-6 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/85ef11f173e315211d80523bcd3ed872d82d573f63fcc531f09ea7a421c2a439?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-14 overflow-hidden max-w-full"
+            alt=""
+          />
+          <div className="self-stretch text-black text-center text-xl font-bold leading-6 tracking-tight capitalize whitespace-nowrap mt-8">
+            javascript
+          </div>
+        </div>
+      </div>
+      <div className="justify-center items-stretch self-center flex w-full max-w-[343px] gap-5 mt-5">
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] bg-white flex flex-col h-[161px] flex-1 px-6 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a7175e15251568469dde5d56314a5737e73fce019e5905d7d149f9feb68ee0bb?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-14 overflow-hidden max-w-full"
+            alt=""
+          />
+          <div className="self-stretch text-black text-center text-xl font-bold leading-6 tracking-tight capitalize whitespace-nowrap mt-8">
+            javascript
+          </div>
+        </div>
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] bg-black flex flex-col h-[161px] flex-1 px-6 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/2d4980d392e44f38ca607f1eee46763f2681d4963ba3f82b4357cc0cb5bf8c8e?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-14 overflow-hidden max-w-full"
+            alt=""
+          />
+          <div className="self-stretch text-white text-center text-xl font-bold leading-6 tracking-tight capitalize whitespace-nowrap mt-8">
+            javascript
+          </div>
+        </div>
+      </div>
+      <div className="justify-center items-stretch self-center flex w-full max-w-[343px] gap-5 mt-5">
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] bg-white flex flex-col h-[161px] flex-1 px-6 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e033847fc3e2a46da229a3832ee8f26bb966595d6810784eb81d6e729b5bd7a?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-14 overflow-hidden max-w-full"
+            alt=""
+          />
+          <div className="self-stretch text-black text-center text-xl font-bold leading-6 tracking-tight capitalize whitespace-nowrap mt-8">
+            javascript
+          </div>
+        </div>
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] bg-white flex flex-col h-[161px] flex-1 px-6 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8fa6150e8f305175444fb97e1f2aa6c8559725a33cedea5ce1a353fdec45117b?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-14 overflow-hidden max-w-full"
+            alt=""
+          />
+          <div className="self-stretch text-black text-center text-xl font-bold leading-6 tracking-tight capitalize whitespace-nowrap mt-8">
+            javascript
+          </div>
+        </div>
+      </div>
+      <div className="items-stretch self-stretch bg-black flex w-full flex-col mt-10 px-4 py-10">
+        <div className="justify-between items-stretch flex gap-4 px-16 py-5">
+          <div className="text-white text-3xl leading-8 tracking-tight whitespace-nowrap">
+            My
+          </div>
+          <div className="text-white text-3xl font-extrabold leading-8 tracking-tight grow whitespace-nowrap">
+            Experience
+          </div>
+        </div>
+        <div className="items-stretch border border-[color:var(--Zinc-500,#71717A)] flex w-full flex-col mt-5 px-6 py-8 rounded-xl border-solid">
+          <div className="items-center flex justify-between gap-5">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c4434711c290f51050f5eaf8c0b71b4361a9d8b472a82a4fc8cb5ea234b4db8?apiKey=6b10e59427914ab996bb6d24a4478661&"
+              className="aspect-square object-contain object-center w-8 overflow-hidden shrink-0 max-w-full my-auto"
+              alt=""
+            />
+            <div className="text-white text-xl font-semibold leading-6 tracking-tight capitalize">
+              Lead Software Engineer at Google
+            </div>
+          </div>
+          <div className="text-zinc-300 text-center text-base font-semibold leading-5 tracking-tight mt-8">
+            Nov 2019 - Present
+          </div>
+          <div className="text-zinc-300 text-base leading-6 tracking-wide mt-7">
+            As a Senior Software Engineer at Google, I played a pivotal role in
+            developing innovative solutions for Google's core search algorithms.
+            Collaborating with a dynamic team of engineers, I contributed to the
+            enhancement of search accuracy and efficiency, optimizing user
+            experiences for millions of users worldwide.
+          </div>
+        </div>{" "}
+        <div className="items-stretch border border-[color:var(--Zinc-500,#71717A)] bg-zinc-800 flex w-full flex-col mt-5 px-6 py-8 rounded-xl border-solid">
+          <div className="items-center flex justify-between gap-5">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e76a149be5bf57355e92fbffe544d8d8154d32a269ac440849a7bb5ed15f9e2c?apiKey=6b10e59427914ab996bb6d24a4478661&"
+              className="aspect-square object-contain object-center w-8 overflow-hidden shrink-0 max-w-full my-auto"
+              alt=""
+
+            />{" "}
+            <div className="text-white text-xl font-semibold leading-6 tracking-tight capitalize">
+              Software Engineer at Youtube
+            </div>
+          </div>{" "}
+          <div className="text-zinc-300 text-center text-base font-semibold leading-5 tracking-tight mt-8">
+            Jan 2017 - Oct 2019
+          </div>{" "}
+          <div className="text-zinc-300 text-base leading-6 tracking-wide mt-7">
+            At Youtube, I served as a Software Engineer, focusing on the design
+            and implementation of backend systems for the social media giant's
+            dynamic platform. Working on projects that involved large-scale data
+            processing and user engagement features, I leveraged my expertise to
+            ensure seamless functionality and scalability.
+          </div>
+        </div>
+        <div className="items-stretch border border-[color:var(--Zinc-500,#71717A)] flex w-full flex-col mt-5 px-6 py-8 rounded-xl border-solid">
+          <div className="items-center flex justify-between gap-5">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef3d76d48790765fc42b4e9f6cfc981d4a3dd885d0b6db1b923c7a75c4f4298d?apiKey=6b10e59427914ab996bb6d24a4478661&"
+              className="aspect-square object-contain object-center w-8 overflow-hidden shrink-0 max-w-full my-auto"
+              alt=""
+            />
+            
+            <div className="text-white text-xl font-semibold leading-6 tracking-tight capitalize">
+              Junior Software Engineer at Apple
+            </div>
+          </div>
+          <div className="text-zinc-300 text-center text-base font-semibold leading-5 tracking-tight mt-8">
+            Jan 2016 - Dec 2017
+          </div>
+          <div className="text-zinc-300 text-base leading-6 tracking-wide mt-7">
+            During my tenure at Apple, I held the role of Software Architect,
+            where I played a key role in shaping the architecture of
+            mission-critical software projects. Responsible for designing
+            scalable and efficient systems, I provided technical leadership to a
+            cross-functional team.
+          </div>
+        </div>
+      </div>
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/166e9778b0ae3b2e8d6de46aa6903c412a4b1d3b1514f39a5e91bea2e353815c?apiKey=6b10e59427914ab996bb6d24a4478661&"
+        className="aspect-[0.94] object-contain object-center w-full overflow-hidden self-center max-w-[343px] mt-11"
+        alt=""
+      />
+      <div className="items-stretch self-center flex w-full max-w-[343px] gap-4 mt-6 p-5">
+        <div className="text-black text-3xl leading-8 tracking-tight">
+          About
+        </div>
+        <div className="text-black text-3xl font-extrabold leading-8 tracking-tight">
+          Me
+        </div>
+      </div>
+      <div className="self-center text-zinc-500 text-base leading-6 tracking-wide w-[343px] mt-5">
+        I'm a passionate, self-proclaimed designer who specializes in full stack
+        development (React.js & Node.js). I am very enthusiastic about bringing
+        the technical and visual aspects of digital products to life. User
+        experience, pixel perfect design, and writing clear, readable, highly
+        performant code matters to me.
+      </div>{" "}
+      <div className="self-center text-zinc-500 text-base leading-6 tracking-wide w-[343px] mt-5">
+        I began my journey as a web developer in 2015, and since then, I've
+        continued to grow and evolve as a developer, taking on new challenges
+        and learning the latest technologies along the way. Now, in my early
+        thirties, 7 years after starting my web development journey, I'm
+        building cutting-edge web applications using modern technologies such as
+        Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+      </div>{" "}
+      <div className="self-center text-zinc-500 text-base leading-6 tracking-wide w-[343px] mt-5">
+        When I'm not in full-on developer mode, you can find me hovering around
+        on twitter or on indie hacker, witnessing the journey of early startups
+        or enjoying some free time. You can follow me on Twitter where I share
+        tech-related bites and build in public, or you can follow me on GitHub.
+      </div>
+      <div className="items-start self-stretch bg-black flex w-full flex-col mt-10 px-4 py-10">
+        <div className="justify-between items-stretch self-stretch flex gap-4 px-20 py-5">
+          <div className="text-white text-3xl leading-8 tracking-tight whitespace-nowrap">
+            My
+          </div>
+          <div className="text-white text-3xl font-extrabold leading-8 tracking-tight grow whitespace-nowrap">
+            Projects
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/6861d50c056e1231104fa04cb0cd1e53e8b7e65fc8ebe7dbc4310c0f4bba81af?apiKey=6b10e59427914ab996bb6d24a4478661&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6861d50c056e1231104fa04cb0cd1e53e8b7e65fc8ebe7dbc4310c0f4bba81af?apiKey=6b10e59427914ab996bb6d24a4478661&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6861d50c056e1231104fa04cb0cd1e53e8b7e65fc8ebe7dbc4310c0f4bba81af?apiKey=6b10e59427914ab996bb6d24a4478661&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6861d50c056e1231104fa04cb0cd1e53e8b7e65fc8ebe7dbc4310c0f4bba81af?apiKey=6b10e59427914ab996bb6d24a4478661&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6861d50c056e1231104fa04cb0cd1e53e8b7e65fc8ebe7dbc4310c0f4bba81af?apiKey=6b10e59427914ab996bb6d24a4478661&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6861d50c056e1231104fa04cb0cd1e53e8b7e65fc8ebe7dbc4310c0f4bba81af?apiKey=6b10e59427914ab996bb6d24a4478661&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6861d50c056e1231104fa04cb0cd1e53e8b7e65fc8ebe7dbc4310c0f4bba81af?apiKey=6b10e59427914ab996bb6d24a4478661&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6861d50c056e1231104fa04cb0cd1e53e8b7e65fc8ebe7dbc4310c0f4bba81af?apiKey=6b10e59427914ab996bb6d24a4478661&"
+          className="aspect-[0.86] object-contain object-center w-full shadow-xl overflow-hidden self-stretch mt-5"
+          alt=""
+        />
+        <div className="self-stretch text-white text-2xl font-extrabold leading-7 tracking-tight whitespace-nowrap mt-7">
+          01
+        </div>
+        <div className="self-stretch text-white text-xl font-extrabold leading-6 tracking-tight capitalize whitespace-nowrap mt-7">
+          Crypto Screener Application
+        </div>
+        <div className="self-stretch text-zinc-500 text-base leading-6 tracking-wide mt-7">
+          I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to specimen book.
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa8ce58814c6141b02c3e89990da49cf9381f30f17b8a601fb19a17522fd5a1c?apiKey=6b10e59427914ab996bb6d24a4478661&"
+          className="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden max-w-full mt-7 self-start"
+          alt=""
+        />
+        <img
+          loading="lazy"
+          srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/62914b25e291c8e068a02bfc5451e90dc2a005f600e833cebbcf9a26cfcf4907?apiKey=6b10e59427914ab996bb6d24a4478661&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/62914b25e291c8e068a02bfc5451e90dc2a005f600e833cebbcf9a26cfcf4907?apiKey=6b10e59427914ab996bb6d24a4478661&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/62914b25e291c8e068a02bfc5451e90dc2a005f600e833cebbcf9a26cfcf4907?apiKey=6b10e59427914ab996bb6d24a4478661&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/62914b25e291c8e068a02bfc5451e90dc2a005f600e833cebbcf9a26cfcf4907?apiKey=6b10e59427914ab996bb6d24a4478661&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/62914b25e291c8e068a02bfc5451e90dc2a005f600e833cebbcf9a26cfcf4907?apiKey=6b10e59427914ab996bb6d24a4478661&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/62914b25e291c8e068a02bfc5451e90dc2a005f600e833cebbcf9a26cfcf4907?apiKey=6b10e59427914ab996bb6d24a4478661&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/62914b25e291c8e068a02bfc5451e90dc2a005f600e833cebbcf9a26cfcf4907?apiKey=6b10e59427914ab996bb6d24a4478661&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/62914b25e291c8e068a02bfc5451e90dc2a005f600e833cebbcf9a26cfcf4907?apiKey=6b10e59427914ab996bb6d24a4478661&"
+          className="aspect-[0.86] object-contain object-center w-full shadow-xl overflow-hidden self-stretch mt-7"
+          alt=""
+        />
+        <div className="self-stretch text-white text-2xl font-extrabold leading-7 tracking-tight whitespace-nowrap mt-7">
+          02
+        </div>
+        <div className="self-stretch text-white text-xl font-extrabold leading-6 tracking-tight capitalize mt-7">
+          Euphoria - Ecommerce (Apparels) Website Template
+        </div>
+        <div className="self-stretch text-zinc-500 text-base leading-6 tracking-wide mt-7">
+          I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to specimen book.
+          <br />
+          when an unknown printer took a galley of type and scrambled it to
+          specimen book.
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b60a2f077bd5e41d0bd9985eb72719db1ee3356c50415560a502e646728719f?apiKey=6b10e59427914ab996bb6d24a4478661&"
+          className="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden max-w-full mt-7 self-start"
+          alt=""
+        />
+        <img
+          loading="lazy"
+          srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/a8bfb2178cfe12c3b129e935f252f913f2a3ddc7340fa503ca0becd2de319c72?apiKey=6b10e59427914ab996bb6d24a4478661&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/a8bfb2178cfe12c3b129e935f252f913f2a3ddc7340fa503ca0becd2de319c72?apiKey=6b10e59427914ab996bb6d24a4478661&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a8bfb2178cfe12c3b129e935f252f913f2a3ddc7340fa503ca0becd2de319c72?apiKey=6b10e59427914ab996bb6d24a4478661&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/a8bfb2178cfe12c3b129e935f252f913f2a3ddc7340fa503ca0becd2de319c72?apiKey=6b10e59427914ab996bb6d24a4478661&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/a8bfb2178cfe12c3b129e935f252f913f2a3ddc7340fa503ca0becd2de319c72?apiKey=6b10e59427914ab996bb6d24a4478661&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a8bfb2178cfe12c3b129e935f252f913f2a3ddc7340fa503ca0becd2de319c72?apiKey=6b10e59427914ab996bb6d24a4478661&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/a8bfb2178cfe12c3b129e935f252f913f2a3ddc7340fa503ca0becd2de319c72?apiKey=6b10e59427914ab996bb6d24a4478661&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/a8bfb2178cfe12c3b129e935f252f913f2a3ddc7340fa503ca0becd2de319c72?apiKey=6b10e59427914ab996bb6d24a4478661&"
+          className="aspect-[0.86] object-contain object-center w-full shadow-xl overflow-hidden self-stretch mt-7"
+          alt=""
+        />
+        <div className="self-stretch text-white text-2xl font-extrabold leading-7 tracking-tight whitespace-nowrap mt-7">
+          03
+        </div>
+        <div className="self-stretch text-white text-xl font-extrabold leading-6 tracking-tight capitalize whitespace-nowrap mt-7">
+          Blog Website Template
+        </div>
+        <div className="self-stretch text-zinc-500 text-base leading-6 tracking-wide mt-7">
+          I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to specimen book.
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/b85a7bf60aeaa1998cca5806119de1f60d138ee2f0894847da3df79b2dd348cb?apiKey=6b10e59427914ab996bb6d24a4478661&"
+          className="aspect-square object-contain object-center w-5 justify-center items-center overflow-hidden max-w-full mt-7 self-start"
+          alt=""
+        />
+      </div>
+      <div className="justify-center items-stretch self-center flex w-full max-w-[343px] gap-4 mt-10 px-16 py-5">
+        <div className="text-black text-3xl leading-8 tracking-tight whitespace-nowrap">
+          My
+        </div>
+        <div className="text-black text-3xl font-extrabold leading-8 tracking-tight grow whitespace-nowrap">
+          Testimonial
+        </div>
+      </div>
+      <div className="justify-center items-stretch self-center flex w-full max-w-[343px] flex-col p-5">
+        <div className="justify-center items-center shadow-lg bg-white flex flex-col p-6 rounded-3xl">
+          <div className="flex-col overflow-hidden relative flex aspect-square w-24 max-w-full items-center pl-16 pt-12 rounded-[50%]">
+            <img
+              loading="lazy"
+              srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&"
+              className="absolute h-full w-full object-cover object-center inset-0"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/18a964145094c1fffde843f1decb6ab7b6ff58cb0db56e2a4ca04e8436302cc8?apiKey=6b10e59427914ab996bb6d24a4478661&"
+              className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden mt-4"
+              alt=""
+            />
+          </div>
+          <div className="self-stretch text-neutral-700 text-center text-base leading-5 tracking-wide mt-6">
+            I recently had to jump on 10+ different calls across eight different
+            countries to find the right owner.
+          </div>
+          <div className="bg-black flex w-[120px] shrink-0 h-0.5 flex-col mt-6" />
+          <div className="self-stretch text-neutral-700 text-center text-xl font-semibold leading-6 tracking-tight capitalize whitespace-nowrap mt-6">
+            Evren Shah
+          </div>
+          <div className="self-stretch text-zinc-500 text-center text-base font-semibold leading-5 tracking-tight whitespace-nowrap mt-6">
+            Designer
+          </div>
+        </div>
+        <div className="justify-center items-center shadow-lg bg-black flex flex-col mt-10 p-6 rounded-3xl">
+          <div className="flex-col overflow-hidden relative flex aspect-square w-24 max-w-full items-center pl-16 pt-12 rounded-[50%]">
+            <img
+              loading="lazy"
+              srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/74ea0be69d47ad15ea984a049669727bb2b2a81ee767240775c3c44ae9c1c05b?apiKey=6b10e59427914ab996bb6d24a4478661&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/74ea0be69d47ad15ea984a049669727bb2b2a81ee767240775c3c44ae9c1c05b?apiKey=6b10e59427914ab996bb6d24a4478661&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/74ea0be69d47ad15ea984a049669727bb2b2a81ee767240775c3c44ae9c1c05b?apiKey=6b10e59427914ab996bb6d24a4478661&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/74ea0be69d47ad15ea984a049669727bb2b2a81ee767240775c3c44ae9c1c05b?apiKey=6b10e59427914ab996bb6d24a4478661&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/74ea0be69d47ad15ea984a049669727bb2b2a81ee767240775c3c44ae9c1c05b?apiKey=6b10e59427914ab996bb6d24a4478661&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/74ea0be69d47ad15ea984a049669727bb2b2a81ee767240775c3c44ae9c1c05b?apiKey=6b10e59427914ab996bb6d24a4478661&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/74ea0be69d47ad15ea984a049669727bb2b2a81ee767240775c3c44ae9c1c05b?apiKey=6b10e59427914ab996bb6d24a4478661&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/74ea0be69d47ad15ea984a049669727bb2b2a81ee767240775c3c44ae9c1c05b?apiKey=6b10e59427914ab996bb6d24a4478661&"
+              className="absolute h-full w-full object-cover object-center inset-0"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/b484f6ea3929fed882e4dcd029327c672554c153546640d9dc3582af41399750?apiKey=6b10e59427914ab996bb6d24a4478661&"
+              className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden mt-4"
+              alt=""
+            />
+          </div>
+          <div className="self-stretch text-white text-center text-base leading-5 tracking-wide mt-6">
+            I recently had to jump on 10+ different calls across eight different
+            countries to find the right owner.
+          </div>
+          <div className="bg-white flex w-[120px] shrink-0 h-0.5 flex-col mt-6" />
+          <div className="self-stretch text-white text-center text-xl font-semibold leading-6 tracking-tight capitalize whitespace-nowrap mt-6">
+            Flora sheen
+          </div>
+          <div className="self-stretch text-white text-center text-base font-semibold leading-5 tracking-tight whitespace-nowrap mt-6">
+            Designer
+          </div>
+        </div>
+        <div className="justify-center items-center shadow-lg bg-white flex flex-col mt-10 p-6 rounded-3xl">
+          <div className="flex-col overflow-hidden relative flex aspect-square w-24 max-w-full items-center pl-16 pt-12 rounded-[50%]">
+            <img
+              loading="lazy"
+              srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/484771b1aef9b38603bbe8478b1128a0dd337d5aa7f93ca5f8dc82d211112997?apiKey=6b10e59427914ab996bb6d24a4478661&"
+              className="absolute h-full w-full object-cover object-center inset-0"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/18a964145094c1fffde843f1decb6ab7b6ff58cb0db56e2a4ca04e8436302cc8?apiKey=6b10e59427914ab996bb6d24a4478661&"
+              className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden mt-4"
+              alt=""
+            />
+          </div>
+          <div className="self-stretch text-neutral-700 text-center text-base leading-5 tracking-wide mt-6">
+            I recently had to jump on 10+ different calls across eight different
+            countries to find the right owner.
+          </div>
+          <div className="bg-black flex w-[120px] shrink-0 h-0.5 flex-col mt-6" />
+          <div className="self-stretch text-neutral-700 text-center text-xl font-semibold leading-6 tracking-tight capitalize whitespace-nowrap mt-6">
+            Evren Shah
+          </div>
+          <div className="self-stretch text-zinc-500 text-center text-base font-semibold leading-5 tracking-tight whitespace-nowrap mt-6">
+            Designer
+          </div>
+        </div>
+      </div>
+      <div className="text-zinc-500 text-base leading-5 tracking-tight whitespace-nowrap items-stretch self-center rounded border-[color:var(--Primary-Black,#000)] w-full max-w-[343px] justify-center mt-24 px-6 py-5 border-[1.4px] border-solid">
+        Your name
+      </div>
+      <div className="text-zinc-500 text-base leading-5 tracking-tight whitespace-nowrap items-stretch self-center rounded border-[color:var(--Primary-Black,#000)] w-full max-w-[343px] justify-center mt-5 px-6 py-5 border-[1.4px] border-solid">
+        Email
+      </div>
+      <div className="text-zinc-500 text-base leading-5 tracking-tight whitespace-nowrap items-stretch self-center rounded border-[color:var(--Primary-Black,#000)] w-full max-w-[343px] justify-center mt-5 px-6 py-5 border-[1.4px] border-solid">
+        Your website (If exists)
+      </div>
+      <div className="text-zinc-500 text-base leading-5 tracking-tight whitespace-nowrap items-stretch self-center rounded border-[color:var(--Primary-Black,#000)] w-full max-w-[343px] justify-center mt-5 px-6 py-4 border-[1.4px] border-solid">
+        How can I help?*
+      </div>
+      <div className="text-white text-base font-semibold leading-5 tracking-wide whitespace-nowrap justify-center items-stretch rounded bg-black ml-4 mt-5 px-4 py-3.5 self-start">
+        Get In Touch
+      </div>
+      <div className="items-stretch self-center flex w-[343px] max-w-full justify-between gap-5 mt-5 pr-20 py-1">
+        <div className="justify-center items-center rounded bg-black flex aspect-square flex-col h-12 flex-1 px-3.5">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d39b13d91afca839d7127b9b39d449d7e2c09f98360ecf297d2e9c66b6a1cee4?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
+            alt=""
+          />
+          {/* alt="" */}
+        </div>
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] flex aspect-square flex-col h-12 flex-1 px-3.5 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e347a7a43f4c9ffea6c5dbf160f8a2f5c1606ad6aa57d7fb3549c2ee70c0c32c?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
+            alt=""
+          />
+        </div>
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] flex aspect-square flex-col h-12 flex-1 px-3.5 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1501c72c8c2a9a2bbd0803ad39f8b0cfeae918115d0f7d6e49d74da1a069533?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
+            alt=""
+          />
+        </div>
+        <div className="justify-center items-center rounded border-[color:var(--Primary-Black,#000)] flex aspect-square flex-col h-12 flex-1 px-3.5 border-2 border-solid">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b29d624b6a6e9822a0b3ea9bcacb4e99bbfa1b500b9df971a57df8fe751d822?apiKey=6b10e59427914ab996bb6d24a4478661&"
+            className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="items-stretch self-center flex w-full max-w-[343px] gap-4 mt-10 px-5">
+        <div className="text-black text-3xl font-extrabold leading-8 tracking-tight">
+          Let’s
+        </div>
+        <div className="text-3xl font-extrabold leading-8 tracking-tight">
+          talk
+        </div>
+        <div className="text-black text-3xl font-extrabold leading-8 tracking-tight">
+          for
+        </div>
+      </div>
+      <div className="text-black text-3xl font-extrabold leading-8 tracking-tight self-center mt-3">
+        Something special
+      </div>
+      <div className="self-center text-zinc-500 text-base leading-6 tracking-wide w-[343px] mt-8">
+        I seek to push the limits of creativity to create high-engaging,
+        user-friendly, and memorable interactive experiences.
+      </div>
+      <div className="self-center text-black text-xl font-bold leading-6 tracking-tight capitalize whitespace-nowrap mt-8">
+        youremail@gmail.com
+      </div>
+      <div className="self-center text-black text-xl font-bold leading-6 tracking-tight capitalize whitespace-nowrap mt-3">
+        8053345267
+      </div>
+      <div className="items-stretch self-stretch bg-black flex w-full flex-col justify-center mt-16 px-4 py-5">
+        <div className="justify-between items-stretch flex w-full gap-5">
+          <div className="items-stretch flex justify-between gap-2 py-1.5">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/060229554c818023e388277ccac0b2c2cea8533a19914aac9fdee1f925f6b1d6?apiKey=6b10e59427914ab996bb6d24a4478661&"
+              className="aspect-square object-contain object-center w-7 overflow-hidden shrink-0 max-w-full"
+              alt=""
+            />
+            <div className="text-white text-xl font-bold leading-6 tracking-tight capitalize self-center grow whitespace-nowrap my-auto">
+              Personal
+            </div>
+          </div>
+          <div className="justify-center items-stretch flex grow basis-[0%] flex-col">
+            <div className="text-white text-right text-xs font-semibold leading-5 tracking-wide whitespace-nowrap">
+              @ 2019-2023 Personal
+            </div>
+            <div className="text-white text-right text-xs font-semibold leading-5 tracking-wide whitespace-nowrap self-end">
+              Made In Figma
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-c0cf8510-2bf2-4b6f-8006-bfa44e64c2b4" data-elfsight-app-lazy></div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
