@@ -1,17 +1,18 @@
-import * as React from "react";
+// import * as React from "react";
 import Swal from 'sweetalert2'
-import myResume from '../src/img/resume.pdf';
+import Intro from '../src/components/Intro'
 import inno from '../src/img/innoconnect.png'
 import ebudget from '../src/img/ebudget.png'
 import checkin from '../src/img/checkin.png'
-import hotel from '../src/img/hotel.jpg'
+import MyResume from '../src/img/resume.pdf'
+import Header from '../src/components/Header'
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { RiReactjsLine } from "react-icons/ri";
-import { RiHtml5Line } from "react-icons/ri";
+// import { RiHtml5Line } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -45,117 +46,14 @@ export default function MyComponent(    ) {
     
   };
 
+  const footerYear = new Date().getFullYear();
+
   return (
     <div className="items-start bg-white flex flex-col pt-6">
+      <Header />
       {/* navbar */}
-      <div className="hidden justify-between items-stretch self-center flex w-full max-w-screen-xl gap-5 px-8 max-md:max-w-full max-md:flex-wrap max-md:px-5">
-        <div className="items-stretch self-center flex gap-3 my-auto">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f466301822a0123570d734f3426582db3ce0c4a1b0ec60a9a706683165bdfdcc?apiKey=6b10e59427914ab996bb6d24a4478661&"
-            className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
-            alt="logo"
-          />
-          <div className="text-black text-xl font-bold leading-6 tracking-tight capitalize self-center grow whitespace-nowrap my-auto hover:underline ">
-            Personal       
-          </div>
-        </div>
-        <div className="justify-between items-stretch self-center flex gap-5 my-auto max-md:max-w-full max-md:flex-wrap">
-          <div className="text-black text-xl font-semibold leading-6 tracking-tight capitalize grow whitespace-nowrap hover:underline">
-            <a href="#about">
-            About Me
-            </a>
-          </div>
-          <div className="text-black text-xl font-semibold leading-6 tracking-tight capitalize hover:underline">
-            <a href="#skills">
-              Skills
-            </a>
-          </div>
-          <div className="text-black text-xl font-semibold leading-6 tracking-tight capitalize hover:underline">
-            <a href="#project">
-              Project
-            </a>
-          </div>
-          <div className="text-black text-xl font-semibold leading-6 tracking-tight capitalize grow whitespace-nowrap hover:underline">
-            <a href="#contact">
-              Contact Me
-            </a>
-          </div>
-        </div>
-        <div className="justify-between items-stretch rounded bg-black flex gap-2 px-5 py-4">
-          <a href={myResume} download="your_resume.pdf">
-            <div 
-              className="text-white text-xl font-semibold leading-6 tracking-wide grow whitespace-nowrap">
-              Resume
-            </div>
-          </a>
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d68e0b508cb674652e50eeb888851b903292815d4d698a7ced624352c317d75a?apiKey=6b10e59427914ab996bb6d24a4478661&"
-            className="aspect-square object-contain object-center w-5 overflow-hidden self-center shrink-0 max-w-full my-auto"
-            alt=""
-          />
-        </div>
-      </div>
       {/* intro page */}
-      <div id="intro" className="items-stretch self-stretch flex w-full flex-col justify-center mt-6 px-16 py-12 max-md:max-w-full max-md:px-5"> 
-        <div className="flex items-center justify-center">
-          <div className="justify-between flex flex-col pl-8 py-12 items-start max-md:px-5">
-            <div className="items-stretch flex gap-4 mt-20 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
-              <div className="text-black text-5xl leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
-                Hello I’am
-              </div>
-              <div className="text-black text-5xl font-extrabold leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
-                Edet Effiong.
-              </div>
-            </div>
-            <div className="items-stretch flex gap-4 font-bold mt-5 max-md:max-w-full max-md:flex-wrap">
-              <div className="text-black text-5xl font-extrabold leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
-                Frontend/mobile
-              </div>
-              <div className="text-5xl font-extrabold leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
-                Developer
-              </div>
-            </div>
-            <div className="text-zinc-900 text-base leading-6 tracking-wide w-[600px] max-w-full mt-8 mb-14 max-md:mb-10">
-              As a dynamic professional, I bring a versatile background encompassing Software Engineering, Data Analysis, IT Support, Project Management, Virtual Assistance, and Technical Writing.
-              With a proven ability to manage multiple tasks and projects concurrently, I uphold a keen eye for detail and quality. 
-              My effective communication and organizational skills empower seamless collaboration with cross-functional teams to achieve project objectives.
-               Eager to leverage technical expertise and problem-solving abilities, I aim to optimize processes and drive success in dynamic work environments.
-            </div>
-            <div className="items-stretch flex justify-between gap-10">
-              <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black hover:text-white hover:bg-black">
-                <a href="https://github.com/Edetmanchi">
-                  <FaGithub className="text-4xl"/>
-                </a>
-              </div>
-              <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
-               <a href="https://www.linkedin.com/in/edet-effiong/">
-                 <FaLinkedin className="text-4xl"/>
-                </a>
-              </div>
-              <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
-                <a href="https://twitter.com/edetmanchi">
-                  <FaXTwitter className="text-4xl"/>
-                </a>
-              </div>
-              <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
-                <a href="https://www.instagram.com/edet_manchi/">
-                 <FaInstagramSquare className="text-4xl"/>
-                </a>
-              </div>
-              <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
-                <a href="https://wa.link/bnktx6">
-                 <IoLogoWhatsapp className="text-4xl"/>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div>
-            <img src={myImage} alt=""/>
-          </div>
-        </div>
-      </div>
+      <Intro/>
       {/* skills page */}
       <div id="skills" className="items-stretch self-center flex w-full max-w-screen-xl flex-col mt-16 pb-5 px-8 max-md:max-w-full max-md:mt-10 max-md:px-5">
         <div className="justify-center items-center flex flex-col px-16 py-5 max-md:max-w-full max-md:px-5">
@@ -168,7 +66,7 @@ export default function MyComponent(    ) {
             </div>
           </div>
         </div>
-        <div className="justify-between items-stretch grid sm:*:grid-col-2 md:grid-row-3 gap-5 mt-10 py-5 max-md:max-w-full max-md:flex-wrap sm:flex-row">
+        <div className="justify-between items-stretch flex gap-5 mt-10 py-5 max-md:max-w-full max-md:flex-wrap sm:flex-row">
           <div className="hover:scale-125 transition duration-300 ease-in-out justify-center items-center rounded border-[color:var(--Primary-Black,#000)] bg-white flex flex-col w-[186px] h-[186px] px-6 border-2 border-solid max-md:px-5">
             < FaGitAlt className="text-4xl"/>
             <div className="self-stretch  text-black text-center text-xl font-bold leading-6 capitalize whitespace-nowrap mt-8">
@@ -201,7 +99,7 @@ export default function MyComponent(    ) {
             </div>
           </div>
         </div>
-        <div className="grid sm:grid-cols-2 hover:scale-75 transition delay-100 ease-in-out justify-between items-stretch gap-5 py-5 max-md:max-w-full max-md:flex-wrap">
+        <div className="flex hover:scale-75 transition delay-100 ease-in-out justify-between items-stretch gap-5 py-5 max-md:max-w-full max-md:flex-wrap">
           <div className="hover:scale-125 transition duration-300 ease-in-out justify-center items-center rounded border-[color:var(--Primary-Black,#000)] bg-white flex flex-col w-[186px] h-[186px] px-6 border-2 border-solid max-md:px-5">
             <SiTailwindcss className="text-4xl"/>
             <div className="self-stretch text-black text-center text-xl font-bold leading-6 tracking-tight capitalize whitespace-nowrap mt-8">
@@ -235,7 +133,7 @@ export default function MyComponent(    ) {
         </div>
       </div>
       {/* experience page */}
-      <div id="experience" className="items-stretch bg-black self-stretch flex w-full flex-col justify-center mt-16 px-16 py-12 max-md:max-w-full max-md:mt-10 max-md:px-5">
+      <div id="experience" className="items-stretch bg-black self-stretch flex w-full flex-col justify-center mt-16 px-16 py-12 max-md:max-w-full md:px-0 max-md:mt-10 max-md:px-5">
         <div className="justify-center items-stretch flex flex-col mx-5 my-2.5 px-8 max-md:max-w-full max-md:mr-2.5 max-md:px-5">
           <div className="justify-center items-center flex flex-col px-16 py-5 max-md:max-w-full max-md:px-5">
             <div className="flex items-stretch gap-4">
@@ -247,8 +145,10 @@ export default function MyComponent(    ) {
               </div>
             </div>
           </div>
+
+          
           <div className="items-stretch flex flex-col mt-5 px-6 py-10 max-md:max-w-full max-md:px-5">
-            <div className="items-stretch border border-[color:var(--Zinc-500,#71717A)] flex flex-col px-6 py-8 rounded-xl border-solid max-md:max-w-full max-md:px-5">
+            <div className="items-stretch border border-[color:var(--Zinc-500,#71717A)] flex flex-col px-0 py-8 rounded-xl border-solid max-md:max-w-full max-md:px-5 md:px-5">
               <div className="justify-between items-stretch flex gap-0 max-md:max-w-full max-md:flex-wrap">
                 <div className="items-stretch flex justify-between gap-5 pr-20 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
                   <img
@@ -257,7 +157,7 @@ export default function MyComponent(    ) {
                     className="aspect-square object-contain object-center w-8 overflow-hidden shrink-0 max-w-full"
                     alt=""
                   />
-                  <div className="text-white text-center text-2xl font-semibold leading-7 tracking-tight self-center grow whitespace-nowrap my-auto">
+                  <div className="text-white text-center text-2xl font-semibold leading-7 text-wrap tracking-tight self-center grow whitespace-nowrap my-auto">
                     Lead Software Engineer at Google
                   </div>
                 </div>
@@ -267,7 +167,7 @@ export default function MyComponent(    ) {
               </div>
               <div className="text-zinc-300 text-base leading-6 tracking-wide mt-7 max-md:max-w-full">
                 As a Senior Software Engineer at Google, I played a pivotal role
-                in developing innovative solutions for Google's core search
+                in developing innovative solutions for Googles core search
                 algorithms. Collaborating with a dynamic team of engineers, I
                 contributed to the enhancement of search accuracy and
                 efficiency, optimizing user experiences for millions of users
@@ -283,7 +183,7 @@ export default function MyComponent(    ) {
                     className="aspect-square object-contain object-center w-8 overflow-hidden shrink-0 max-w-full"
                     alt=""
                   />{" "}
-                  <div className="text-white text-center text-2xl font-semibold leading-7 tracking-tight self-center grow whitespace-nowrap my-auto">
+                  <div className="text-white text-center text-2xl font-semibold leading-7 text-wrap tracking-tight self-center grow whitespace-nowrap my-auto">
                     Software Engineer at Youtube
                   </div>
                 </div>{" "}
@@ -294,7 +194,7 @@ export default function MyComponent(    ) {
               <div className="text-zinc-300 text-base leading-6 tracking-wide mt-7 max-md:max-w-full">
                 At Youtube, I served as a Software Engineer, focusing on the
                 design and implementation of backend systems for the social
-                media giant's dynamic platform. Working on projects that
+                media giants dynamic platform. Working on projects that
                 involved large-scale data processing and user engagement
                 features, I leveraged my expertise to ensure seamless
                 functionality and scalability.
@@ -309,7 +209,7 @@ export default function MyComponent(    ) {
                     className="aspect-square object-contain object-center w-8 overflow-hidden shrink-0 max-w-full"
                     alt=""
                   />
-                  <div className="text-white text-center text-2xl font-semibold leading-7 tracking-tight self-center grow whitespace-nowrap my-auto">
+                  <div className="text-white text-center text-2xl font-semibold leading-7 text-wrap tracking-tight self-center grow whitespace-nowrap my-auto">
                     Junior Software Engineer at Apple
                   </div>
                 </div>
@@ -350,7 +250,7 @@ export default function MyComponent(    ) {
                 </div>
               </div>
               <div className="text-zinc-500 text-base leading-6 tracking-wide mt-5 max-md:max-w-full">
-                I'm a passionate, self-proclaimed designer who specializes in
+                Im a passionate, self-proclaimed designer who specializes in
                 full stack development (React.js & Node.js). I am very
                 enthusiastic about bringing the technical and visual aspects of
                 digital products to life. User experience, pixel perfect design,
@@ -359,15 +259,15 @@ export default function MyComponent(    ) {
               </div>{" "}
               <div className="text-zinc-500 text-base leading-6 tracking-wide mt-5 max-md:max-w-full">
                 I began my journey as a web developer in 2015, and since then,
-                I've continued to grow and evolve as a developer, taking on new
+                Ive continued to grow and evolve as a developer, taking on new
                 challenges and learning the latest technologies along the way.
                 Now, in my early thirties, 7 years after starting my web
-                development journey, I'm building cutting-edge web applications
+                development journey, Im building cutting-edge web applications
                 using modern technologies such as Next.js, TypeScript, Nestjs,
                 Tailwindcss, Supabase and much more.
               </div>{" "}
               <div className="text-zinc-500 text-base leading-6 tracking-wide mt-5 max-md:max-w-full">
-                When I'm not in full-on developer mode, you can find me hovering
+                When Im not in full-on developer mode, you can find me hovering
                 around on twitter or on indie hacker, witnessing the journey of
                 early startups or enjoying some free time. You can follow me on
                 Twitter where I share tech-related bites and build in public, or
@@ -504,9 +404,9 @@ export default function MyComponent(    ) {
                     The Euphoria - Ecommerce (Apparels) Website
                   </div>
                   <div className="self-stretch text-zinc-500 text-base leading-6 tracking-wide mt-7 max-md:max-w-full">
-                    I'm Evren Shah Lorem Ipsum is simply dummy text of the
+                    Im Evren Shah Lorem Ipsum is simply dummy text of the
                     printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an
+                    industrys standard dummy text ever since the 1500s, when an
                     unknown printer took a galley of type and scrambled it to
                     specimen book.
                     <br />
@@ -534,7 +434,7 @@ export default function MyComponent(    ) {
         </div>
       </div>
       {/* testimonial page */}
-      <div id="testimonial" className="items-stretch bg-white self-stretch flex w-full flex-col justify-center px-16 py-12 max-md:max-w-full max-md:px-5">
+      {/* <div id="testimonial" className="items-stretch bg-white self-stretch flex w-full flex-col justify-center px-16 py-12 max-md:max-w-full max-md:px-5">
         <div className="justify-center items-stretch flex flex-col mx-5 my-2.5 px-8 max-md:max-w-full max-md:mr-2.5 max-md:px-5">
           <div className="justify-center items-center flex flex-col px-16 py-5 max-md:max-w-full max-md:px-5">
             <div className="flex items-stretch gap-4">
@@ -638,14 +538,14 @@ export default function MyComponent(    ) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* contact page */}
-      <div id="contact" className="items-stretch bg-white self-stretch flex w-full flex-col justify-center px-16 py-12 max-md:max-w-full max-md:px-5">
-        <div className="justify-between mx-5 my-2.5 px-8 py-5 max-md:max-w-full max-md:mr-2.5 max-md:px-5">
-          <div className="gap-5 flex max-md:flex-col items-center justify-center max-md:items-stretch max-md:gap-0">
-            <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
-                <form onSubmit={handleSubmit}>
-              <div className="items-stretch flex mx-10 gap-7 flex-col max-md:max-w-full max-md:mt-5">
+      <div id="contact" className=" bg-white  w-full py-12 max-md:max-w-full max-md:px-5 justify-between mx-5 my-2.5 px-8">
+        {/* <div className="justify-between mx-5 my-2.5 px-8 py-5 max-md:max-w-full max-md:mr-2.5 max-md:px-5"> */}
+          <div className="gap-5 flex max-md:flex-col">
+            {/* <div className=""> */}
+              <form onSubmit={handleSubmit}>
+               <div className="items-stretch flex mx-10 gap-7 flex-col max-md:max-w-full max-md:mt-5">
                   <div className=" rounded border-black justify-center border-[1.4px]">
                     <input
                       className="appearance-none w-full h-full py-5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline-blue"
@@ -711,34 +611,34 @@ export default function MyComponent(    ) {
                   
                 </div>
               </div>
-                  </form>
-            </div>
-            <div className="flex flex-col items-start w-6/12 ml-5 max-md:w-full max-md:ml-0">
-              <div className="justify-center items-stretch self-stretch flex grow flex-col py-12 max-md:max-w-full max-md:mt-5">
+              </form>
+            {/* </div> */}
+            <div className="flex flex-col w-6/12 ml-5 max-md:w-full max-md:ml-0">
+              {/* <div className="justify-center items-stretch self-stretch flex grow flex-col py-12 max-md:max-w-full max-md:mt-5"> */}
                 <div className="items-stretch flex-col gap-5 pr-20 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
                   <div className="text-black text-5xl font-extrabold leading-[56.16px] tracking-tighter whitespace-nowrap max-md:text-4xl">
                     Connect with Me
                   </div>
                  
-                  <div className="text-zinc-900 text-base leading-6 tracking-wide mt-5 max-md:max-w-full">
+                  <div className="text-zinc-900 text-lg mt-5 ">
                     I seek to push the limits of creativity to create
                     high-engaging, user-friendly, and memorable interactive
                     experiences.
                   </div>
-                  <div className="text-black text-3xl font-semibold leading-8 tracking-tight mt-10 max-md:max-w-full">
+                  <div className="text-md text-black text-2xl font-semibold mt-10 max-md:max-w-full">
                     edeteffiong321@gmail.com
                   </div>
-                  <div className="text-black text-3xl font-semibold leading-8 tracking-tight my-4 max-md:max-w-full">
+                  <div className="text-black text-3xl font-semibold my-4 max-md:max-w-full text-md md:text-lg">
                     +234 8071284705
                   </div>
-              </div>
-            </div>
+              {/* </div> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
       {/* footer */}
-      <div className="items-stretch bg-black self-stretch flex  flex-col justify-center px-16 py-6 max-md:max-w-full max-md:px-5">
-        <div className="justify-between items-center flex gap-5  px-8 max-md:max-w-full max-md:flex-wrap max-md:mr-2.5 max-md:px-5">
+      <div className="items-stretch bg-black self-stretch flex  flex-col justify-center px-16 py-6 mt-16">
+        <div className="justify-between items-center flex gap-5 max-md:max-w-full max-md:flex-wrap">
           <div className="items-stretch flex gap-3 my-auto">
             <img
               loading="lazy"
@@ -750,7 +650,7 @@ export default function MyComponent(    ) {
               Personal
             </div>
           </div>
-          <a href={myResume} download="your_resume.pdf">
+          <a href={MyResume} download="your_resume.pdf">
             <div 
               className="text-black bg-white text-xl py-4 px-7 rounded-xl hover:bg-grey-800 font-bold leading-6 tracking-wide whitespace-nowrap">
               Download Resume
@@ -758,7 +658,7 @@ export default function MyComponent(    ) {
           </a>
           <div className="items-stretch self-stretch flex flex-col">
             <div className="text-white text-right text-base font-semibold leading-5 tracking-tight whitespace-nowrap">
-              @ 2024
+              @ {footerYear}
             </div>
             <div className="text-white text-right text-base font-semibold leading-5 tracking-tight whitespace-nowrap mt-3 self-end">
               Made with love by Edet Effiong
