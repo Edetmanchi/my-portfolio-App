@@ -1,11 +1,11 @@
 // import * as React from "react";
 import Swal from 'sweetalert2'
-import Intro from '../src/components/Intro'
+import Intro from './components/Intro'
 import inno from '../src/img/innoconnect.png'
 import ebudget from '../src/img/ebudget.png'
 import checkin from '../src/img/checkin.png'
 import MyResume from '../src/img/resume.pdf'
-import Header from '../src/components/Header'
+import Header from './components/Header'
 import { FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
@@ -55,18 +55,18 @@ export default function MyComponent(    ) {
       {/* intro page */}
       <Intro/>
       {/* skills page */}
-      <div id="skills" className="items-stretch self-center flex w-full max-w-screen-xl flex-col mt-16 pb-5 px-8 max-md:max-w-full max-md:mt-10 max-md:px-5">
+      <div id="skills" className="items-stretch self-center flex w-full max-w-screen-xl flex-col mt-16 pb-5 px-8 ">
         <div className="justify-center items-center flex flex-col px-16 py-5 max-md:max-w-full max-md:px-5">
           <div className="flex gap-4 justify-center items-center">
-            <div className="text-black text-5xl leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
+            <div className="text-black text-center text-5xl leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
               My
             </div>
-            <div className="text-black text-5xl font-extrabold leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
+            <div className="text-black text-center text-5xl font-extrabold leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
               Skills
             </div>
           </div>
         </div>
-        <div className="justify-between items-stretch flex gap-5 mt-10 py-5 max-md:max-w-full max-md:flex-wrap sm:flex-row">
+        <div className="justify-between mt-10 py-4 grid grid-cols-2 md:grid-cols-5 gap-5">
           <div className="hover:scale-125 transition duration-300 ease-in-out justify-center items-center rounded border-[color:var(--Primary-Black,#000)] bg-white flex flex-col w-[186px] h-[186px] px-6 border-2 border-solid max-md:px-5">
             < FaGitAlt className="text-4xl"/>
             <div className="self-stretch  text-black text-center text-xl font-bold leading-6 capitalize whitespace-nowrap mt-8">
@@ -99,7 +99,7 @@ export default function MyComponent(    ) {
             </div>
           </div>
         </div>
-        <div className="flex hover:scale-75 transition delay-100 ease-in-out justify-between items-stretch gap-5 py-5 max-md:max-w-full max-md:flex-wrap">
+        <div className=" hover:scale-75 transition delay-100 ease-in-out items-center justify-center gap-5 py-3 grid grid-cols-2 md:grid-cols-5 ">
           <div className="hover:scale-125 transition duration-300 ease-in-out justify-center items-center rounded border-[color:var(--Primary-Black,#000)] bg-white flex flex-col w-[186px] h-[186px] px-6 border-2 border-solid max-md:px-5">
             <SiTailwindcss className="text-4xl"/>
             <div className="self-stretch text-black text-center text-xl font-bold leading-6 tracking-tight capitalize whitespace-nowrap mt-8">
@@ -133,7 +133,7 @@ export default function MyComponent(    ) {
         </div>
       </div>
       {/* experience page */}
-      <div id="experience" className="items-stretch bg-black self-stretch flex w-full flex-col justify-center mt-16 px-16 py-12 max-md:max-w-full md:px-0 max-md:mt-10 max-md:px-5">
+      {/* <div id="experience" className="items-stretch bg-black self-stretch flex w-full flex-col justify-center mt-16 px-16 py-12 max-md:max-w-full md:px-0 max-md:mt-10 max-md:px-5">
         <div className="justify-center items-stretch flex flex-col mx-5 my-2.5 px-8 max-md:max-w-full max-md:mr-2.5 max-md:px-5">
           <div className="justify-center items-center flex flex-col px-16 py-5 max-md:max-w-full max-md:px-5">
             <div className="flex items-stretch gap-4">
@@ -227,7 +227,7 @@ export default function MyComponent(    ) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* About page */}
       <div id="about" className="justify-between self-center w-full max-w-screen-xl mt-16 px-8 max-md:max-w-full max-md:mt-10 max-md:px-5">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
@@ -433,112 +433,7 @@ export default function MyComponent(    ) {
           </div>
         </div>
       </div>
-      {/* testimonial page */}
-      {/* <div id="testimonial" className="items-stretch bg-white self-stretch flex w-full flex-col justify-center px-16 py-12 max-md:max-w-full max-md:px-5">
-        <div className="justify-center items-stretch flex flex-col mx-5 my-2.5 px-8 max-md:max-w-full max-md:mr-2.5 max-md:px-5">
-          <div className="justify-center items-center flex flex-col px-16 py-5 max-md:max-w-full max-md:px-5">
-            <div className="flex items-stretch gap-4">
-              <div className="text-black text-5xl leading-[56.16px] tracking-tighter whitespace-nowrap max-md:text-4xl">
-                My
-              </div>
-              <div className="text-black text-5xl font-extrabold leading-[56.16px] tracking-tighter grow whitespace-nowrap max-md:text-4xl">
-                Testimonial
-              </div>
-            </div>
-          </div>
-          <div className="justify-between mt-5 px-6 py-10 max-md:max-w-full max-md:px-5">
-            <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-              <div className="flex flex-col items-stretch w-[33%] max-md:w-full max-md:ml-0">
-                <div className="justify-center items-center shadow-lg bg-white flex grow flex-col w-full p-10 rounded-3xl max-md:mt-10 max-md:px-5">
-                  <div className="flex-col overflow-hidden relative flex aspect-square w-24 max-w-full items-center pl-16 pt-12 rounded-[50%] max-md:pl-5">
-                    <img
-                      loading="lazy"
-                      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&"
-                      className="absolute h-full w-full object-cover object-center inset-0"
-                      alt=""
-                    />
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/3ba2ec3cbd87c9b61ab493a4eb29feed989734dd6279bcc9af4e7571ec3b91d8?apiKey=6b10e59427914ab996bb6d24a4478661&"
-                      className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden mt-4"
-                      alt=""
-                    />
-                  </div>
-                  <div className="self-stretch text-neutral-700 text-center text-base leading-5 tracking-wide mt-6">
-                    I recently had to jump on 10+ different calls across eight
-                    different countries to find the right owner.
-                  </div>
-                  <div className="bg-black flex w-[120px] shrink-0 h-0.5 flex-col mt-6" />
-                  <div className="self-stretch text-neutral-700 text-center text-xl font-semibold leading-6 tracking-tight capitalize whitespace-nowrap mt-6">
-                    Evren Shah
-                  </div>
-                  <div className="self-stretch text-zinc-500 text-center text-base font-semibold leading-5 tracking-tight whitespace-nowrap mt-6">
-                    Designer
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col items-stretch w-[33%] ml-5 max-md:w-full max-md:ml-0">
-                <div className="justify-center items-center shadow-lg bg-black flex grow flex-col w-full p-10 rounded-3xl max-md:mt-10 max-md:px-5">
-                  <div className="flex-col overflow-hidden relative flex aspect-square w-24 max-w-full items-center pl-16 pt-12 rounded-[50%] max-md:pl-5">
-                    <img
-                      loading="lazy"
-                      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/a45acdb4c47d9e532580e452e7fb3882f3685b739ff4437459996e57ddcab1a2?apiKey=6b10e59427914ab996bb6d24a4478661&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/a45acdb4c47d9e532580e452e7fb3882f3685b739ff4437459996e57ddcab1a2?apiKey=6b10e59427914ab996bb6d24a4478661&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a45acdb4c47d9e532580e452e7fb3882f3685b739ff4437459996e57ddcab1a2?apiKey=6b10e59427914ab996bb6d24a4478661&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/a45acdb4c47d9e532580e452e7fb3882f3685b739ff4437459996e57ddcab1a2?apiKey=6b10e59427914ab996bb6d24a4478661&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/a45acdb4c47d9e532580e452e7fb3882f3685b739ff4437459996e57ddcab1a2?apiKey=6b10e59427914ab996bb6d24a4478661&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a45acdb4c47d9e532580e452e7fb3882f3685b739ff4437459996e57ddcab1a2?apiKey=6b10e59427914ab996bb6d24a4478661&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/a45acdb4c47d9e532580e452e7fb3882f3685b739ff4437459996e57ddcab1a2?apiKey=6b10e59427914ab996bb6d24a4478661&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/a45acdb4c47d9e532580e452e7fb3882f3685b739ff4437459996e57ddcab1a2?apiKey=6b10e59427914ab996bb6d24a4478661&"
-                      className="absolute h-full w-full object-cover object-center inset-0"
-                      alt=""
-                    />
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/60b09f741e64c965b18df0a998dea55d3c2d4945aaa01cd9bf706f5cb56d110f?apiKey=6b10e59427914ab996bb6d24a4478661&"
-                      className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden mt-4"
-                      alt=""
-                    />
-                  </div>
-                  <div className="self-stretch text-white text-center text-base leading-5 tracking-wide mt-6">
-                    I recently had to jump on 10+ different calls across eight
-                    different countries to find the right owner.
-                  </div>
-                  <div className="bg-white flex w-[120px] shrink-0 h-0.5 flex-col mt-6" />
-                  <div className="self-stretch text-white text-center text-xl font-semibold leading-6 tracking-tight capitalize whitespace-nowrap mt-6">
-                    Flora sheen
-                  </div>
-                  <div className="self-stretch text-white text-center text-base font-semibold leading-5 tracking-tight whitespace-nowrap mt-6">
-                    Designer
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col items-stretch w-[33%] ml-5 max-md:w-full max-md:ml-0">
-                <div className="justify-center items-center shadow-lg bg-white flex grow flex-col w-full p-10 rounded-3xl max-md:mt-10 max-md:px-5">
-                  <div className="flex-col overflow-hidden relative flex aspect-square w-24 max-w-full items-center pl-16 pt-12 rounded-[50%] max-md:pl-5">
-                    <img
-                      loading="lazy"
-                      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/8ffec3ef9a0395d2293c8b54a539187dff16459a666960831c76f8c8d8072060?apiKey=6b10e59427914ab996bb6d24a4478661&"
-                      className="absolute h-full w-full object-cover object-center inset-0"
-                      alt=""
-                    />
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/3ba2ec3cbd87c9b61ab493a4eb29feed989734dd6279bcc9af4e7571ec3b91d8?apiKey=6b10e59427914ab996bb6d24a4478661&"
-                      className="aspect-square object-contain object-center w-full justify-center items-center overflow-hidden mt-4"
-                      alt=""
-                    />
-                  </div>
-                  <div className="self-stretch text-neutral-700 text-center text-base leading-5 tracking-wide mt-6">
-                    I recently had to jump on 10+ different calls across eight
-                    different countries to find the right owner.
-                  </div>
-                  <div className="bg-black flex w-[120px] shrink-0 h-0.5 flex-col mt-6" />
-                  <div className="self-stretch text-neutral-700 text-center text-xl font-semibold leading-6 tracking-tight capitalize whitespace-nowrap mt-6">
-                    Evren Shah
-                  </div>
-                  <div className="self-stretch text-zinc-500 text-center text-base font-semibold leading-5 tracking-tight whitespace-nowrap mt-6">
-                    Designer
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      
       {/* contact page */}
       <div id="contact" className=" bg-white  w-full py-12 max-md:max-w-full max-md:px-5 justify-between mx-5 my-2.5 px-8">
         {/* <div className="justify-between mx-5 my-2.5 px-8 py-5 max-md:max-w-full max-md:mr-2.5 max-md:px-5"> */}
@@ -548,7 +443,7 @@ export default function MyComponent(    ) {
                <div className="items-stretch flex mx-10 gap-7 flex-col max-md:max-w-full max-md:mt-5">
                   <div className=" rounded border-black justify-center border-[1.4px]">
                     <input
-                      className="appearance-none w-full h-full py-5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline-blue"
+                      className="appearance-none w-full h-full max-sm:py-3 max-sm:px-4 py-5 px-3  text-gray-700 leading-tight focus:outline-none focus:shadow-outline-blue"
                       id="name"
                       name="name"
                       type="text"
@@ -558,7 +453,7 @@ export default function MyComponent(    ) {
     
                   <div className="rounded border-black justify-center border-[1.4px]">
                     <input
-                      className="appearance-none w-full h-full py-5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline-blue"
+                      className="appearance-none w-full h-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline-blue max-sm:py-3 max-sm:px-4 py-5 px-4"
                       id="email"
                       name="email"
                       type="email"
@@ -567,44 +462,44 @@ export default function MyComponent(    ) {
                   </div>
                   <div className="rounded border-black justify-center border-[1.4px]">
                     <textarea
-                      className="appearance-none rounded w-full h-full py-5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline-blue"
+                      className="appearance-none rounded w-full h-full py-5 px-3 max-sm:py-3 max-sm:px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline-blue"
                       id="message"
                       rows="4"
                       placeholder="Your Message"
                     />
                   </div>
-                <div className="items-stretch flex justify-between gap-5 mt-5 pr-20 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
+                <div className="flex justify-between items-center gap-5 mt-5 pr-20 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
                   <button
-                      className="bg-black hover:bg-white hover:border-gray-800 hover:border hover:text-black text-white font-bold py-2 px-12 rounded focus:outline-none focus:shadow-outline-blue"
+                      className="bg-black hover:bg-white hover:border-gray-800 hover:border hover:text-black text-white font-bold py-3 px-12 rounded focus:outline-none focus:shadow-outline-blue"
                       type="submit"
                       onClick={handleSubmit}
                     >
                       Submit
                   </button>                
-                  <div className="items-stretch flex justify-between gap-10">
-                    <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black hover:text-white hover:bg-black">
+                  <div className="items-stretch flex justify-between gap-9 max-sm:gap-3">
+                    <div className="justify-center items-center flex max-sm:w-12 w-14 h-14 rounded-lg border-2 border-black hover:text-white hover:bg-black">
                       <a href="https://github.com/Edetmanchi">
-                        <FaGithub className="text-4xl"/>
+                        <FaGithub className="text-4xl max-sm:text-2xl"/>
                       </a>
                     </div>
-                    <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
+                    <div className="justify-center items-center flex max-sm:w-12 w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
                     <a href="https://www.linkedin.com/in/edet-effiong/">
-                      <FaLinkedin className="text-4xl"/>
+                      <FaLinkedin className="text-4xl max-sm:text-2xl"/>
                       </a>
                     </div>
-                    <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
+                    <div className="justify-center items-center flex max-sm:w-12  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
                       <a href="https://twitter.com/edetmanchi">
-                        <FaXTwitter className="text-4xl"/>
+                        <FaXTwitter className="text-4xl max-sm:text-2xl"/>
                       </a>
                     </div>
-                    <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
+                    <div className="justify-center items-center flex max-sm:w-12  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
                       <a href="https://www.instagram.com/edet_manchi/">
-                      <FaInstagramSquare className="text-4xl"/>
+                      <FaInstagramSquare className="text-4xl max-sm:text-2xl"/>
                       </a>
                     </div>
-                    <div className="justify-center items-center flex  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
+                    <div className="justify-center items-center flex max-sm:w-12  w-14 h-14 rounded-lg border-2 border-black  hover:text-white hover:bg-black">
                       <a href="https://wa.link/bnktx6">
-                      <IoLogoWhatsapp className="text-4xl"/>
+                      <IoLogoWhatsapp className="text-4xl max-sm:text-2xl"/>
                       </a>
                     </div>
                   </div>
@@ -616,19 +511,19 @@ export default function MyComponent(    ) {
             <div className="flex flex-col w-6/12 ml-5 max-md:w-full max-md:ml-0">
               {/* <div className="justify-center items-stretch self-stretch flex grow flex-col py-12 max-md:max-w-full max-md:mt-5"> */}
                 <div className="items-stretch flex-col gap-5 pr-20 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
-                  <div className="text-black text-5xl font-extrabold leading-[56.16px] tracking-tighter whitespace-nowrap max-md:text-4xl">
+                  <div className="text-black text-5xl font-extrabold leading-[56.16px] text-center whitespace-nowrap max-md:text-3xl">
                     Connect with Me
                   </div>
                  
-                  <div className="text-zinc-900 text-lg mt-5 ">
+                  <div className="text-zinc-900 text-lg mt-5 max-sm:px-3 ">
                     I seek to push the limits of creativity to create
                     high-engaging, user-friendly, and memorable interactive
                     experiences.
                   </div>
-                  <div className="text-md text-black text-2xl font-semibold mt-10 max-md:max-w-full">
+                  <div className="text-md max-sm:text-center max-sm:text-xl text-black text-2xl font-semibold mt-10 max-md:max-w-full">
                     edeteffiong321@gmail.com
                   </div>
-                  <div className="text-black text-3xl font-semibold my-4 max-md:max-w-full text-md md:text-lg">
+                  <div className="text-black text-3xl max-sm:text-center max-sm:text-2xl font-semibold my-4 max-md:max-w-full text-md md:text-lg">
                     +234 8071284705
                   </div>
               {/* </div> */}
@@ -637,35 +532,33 @@ export default function MyComponent(    ) {
         </div>
       </div>
       {/* footer */}
-      <div className="items-stretch bg-black self-stretch flex  flex-col justify-center px-16 py-6 mt-16">
-        <div className="justify-between items-center flex gap-5 max-md:max-w-full max-md:flex-wrap">
-          <div className="items-stretch flex gap-3 my-auto">
+        <div className=" items-center bg-black py-6 px-16 mt-10 gap-5 w-screen grid sm:grid-cols-1 md:grid-cols-3 max-sm:items-center justify-between ">
+          <div className=" flex gap-3 items-center justify-center">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/c88de65f1b5af8e5fc07c456808eee04ad636b8137f6c3c636905ed618bc2390?apiKey=6b10e59427914ab996bb6d24a4478661&"
-              className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
+              className="aspect-square object-contain object-center w-10l"
               alt=""
             />
             <div className="text-white text-xl font-bold leading-6 tracking-tight capitalize self-center grow whitespace-nowrap my-auto">
               Personal
             </div>
           </div>
-          <a href={MyResume} download="your_resume.pdf">
             <div 
-              className="text-black bg-white text-xl py-4 px-7 rounded-xl hover:bg-grey-800 font-bold leading-6 tracking-wide whitespace-nowrap">
-              Download Resume
+              className="text-black text-center bg-white text-xl py-4 mx-16 px-4 max-sm:mx-5 rounded-xl hover:bg-grey-800 font-bold">
+          <a href={MyResume} download="your_resume.pdf">
+                Download Resume
+              </a>
             </div>
-          </a>
-          <div className="items-stretch self-stretch flex flex-col">
+          <div className="flex flex-col">
             <div className="text-white text-right text-base font-semibold leading-5 tracking-tight whitespace-nowrap">
               @ {footerYear}
             </div>
-            <div className="text-white text-right text-base font-semibold leading-5 tracking-tight whitespace-nowrap mt-3 self-end">
-              Made with love by Edet Effiong
+            <div className="text-white text-right font-semibold  mt-3 self-end">
+              Made with ❤ by Edet Effiong
             </div>
           </div>
         </div>
-      </div>
     </div>
     </div>
   );

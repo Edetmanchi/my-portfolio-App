@@ -11,8 +11,8 @@ export default function Intro() {
     const myImage = "https://cdn.hashnode.com/res/hashnode/image/upload/v1704302659496/676ebe7f-81de-43fa-ac8b-4dee416fe7b1.png?auto=compress,format&format=webp"   
   return (
     
-    <div className="items-stretch self-stretch flex w-full flex-col justify-center mt-6 px-16 py-12 max-md:max-w-full max-md:px-5"> 
-        <div className="md:flex sm:flex-col-reverse items-center justify-between">
+    <div className="flex w-full flex-col justify-between mt-6 px-16 py-12 max-md:max-w-full max-md:px-5"> 
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-5 items-center justify-between">
           <div>
             <img src={myImage} alt=""/>
           </div>
