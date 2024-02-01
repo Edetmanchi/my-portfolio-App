@@ -1,5 +1,4 @@
-// import { Fragment } from 'react'
-// import React from 'react'
+
 import Myresume from '../img/resume.pdf'
 import { Disclosure} from '@headlessui/react'
 // import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -17,7 +16,7 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="mt-3">
+    <Disclosure as="nav" className="">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

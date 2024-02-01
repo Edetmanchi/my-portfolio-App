@@ -3,11 +3,11 @@ import React from 'react'
 export default function Contacts() {
   return (
     <div>
-        <div id="contact" className="items-stretch bg-white self-stretch flex w-full flex-col justify-center px-16 py-12 max-md:max-w-full max-md:px-5">
-        <div className="justify-between mx-5 my-2.5 px-8 py-5 max-md:max-w-full max-md:mr-2.5 max-md:px-5">
+      <div id="contact" className="items-stretch bg-white self-stretch flex w-full flex-col justify-center px-16 py-12 max-md:max-w-full max-md:px-5">
+        {/* <div className="justify-between mx-5 my-2.5 px-8 py-5 max-md:max-w-full max-md:mr-2.5 max-md:px-5">
           <div className="gap-5 flex max-md:flex-col items-center justify-center max-md:items-stretch max-md:gap-0">
             <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
-                <form onSubmit={handleSubmit}>
+                <form>
               <div className="items-stretch flex mx-10 gap-7 flex-col max-md:max-w-full max-md:mt-5">
                   <div className=" rounded border-black justify-center border-[1.4px]">
                     <input
@@ -40,7 +40,7 @@ export default function Contacts() {
                   <button
                       className="bg-black hover:bg-white hover:border-gray-800 hover:border hover:text-black text-white font-bold py-2 px-12 rounded focus:outline-none focus:shadow-outline-blue"
                       type="submit"
-                      onClick={handleSubmit}
+                  
                     >
                       Submit
                   </button>                
@@ -98,37 +98,9 @@ export default function Contacts() {
             </div>
           </div>
         </div>
-      </div>
-      {/* footer */}
-      <div className="items-stretch bg-black self-stretch flex  flex-col justify-center px-16 py-6 max-md:max-w-full max-md:px-5">
-        <div className="justify-between items-center flex gap-5  px-8 max-md:max-w-full max-md:flex-wrap max-md:mr-2.5 max-md:px-5">
-          <div className="items-stretch flex gap-3 my-auto">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c88de65f1b5af8e5fc07c456808eee04ad636b8137f6c3c636905ed618bc2390?apiKey=6b10e59427914ab996bb6d24a4478661&"
-              className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
-              alt=""
-            />
-            <div className="text-white text-xl font-bold leading-6 tracking-tight capitalize self-center grow whitespace-nowrap my-auto">
-              Personal
-            </div>
-          </div>
-          <a href={MyResume} download="your_resume.pdf">
-            <div 
-              className="text-black bg-white text-xl py-4 px-7 rounded-xl hover:bg-grey-800 font-bold leading-6 tracking-wide whitespace-nowrap">
-              Download Resume
-            </div>
-          </a>
-          <div className="items-stretch self-stretch flex flex-col">
-            <div className="text-white text-right text-base font-semibold leading-5 tracking-tight whitespace-nowrap">
-              @ 2024
-            </div>
-            <div className="text-white text-right text-base font-semibold leading-5 tracking-tight whitespace-nowrap mt-3 self-end">
-              Made with love by Edet Effiong
-            </div>
-          </div>
-        </div>
-      </div>
+       </div> */}
+    
+      
     </div>
     </div>
   )
